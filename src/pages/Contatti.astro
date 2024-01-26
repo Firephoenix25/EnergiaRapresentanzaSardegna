@@ -1,5 +1,8 @@
 ---
+import { Input } from "../components/input";
 import Layout from "../layouts/Layout.astro";
+import Form from "../components/form.svelte";
+import type { loadApp } from "astro/app/node";
 ---
 
 <Layout title="Contatti">
@@ -8,7 +11,7 @@ import Layout from "../layouts/Layout.astro";
     style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;"
   >
     <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap mb-24 lg:mb-16 justify-between items-center">
+      <div class="flex flex-wrap mb-5 lg:mb-16 justify-between items-center">
         <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
           <h3
             class="mb-4 text-4xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter"
@@ -21,11 +24,20 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
       </div>
-      <div class="flex flex-wrap items-center -mx-4">
+      <div
+        class="block rounded-lg shadow-lg border py-6 mx-3 px-6"
+        style="
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+  "
+      >
+        <Form client:load />
+      </div>
+      <div class="flex flex-wrap items-center -mx-4 mt-10">
         <div class="w-full lg:w-1/2 px-4 mb-14 lg:mb-0">
           <div class="flex mb-18">
             <div
-              class="inline-flex mr-6 items-center justify-center w-12 h-12 bg-green-500 rounded-full"
+              class="inline-flex mr-6 items-center justify-center w-12 h-12 bg-[#16A349] rounded-full"
             >
               <svg
                 class="h-6 text-white"
@@ -47,14 +59,14 @@ import Layout from "../layouts/Layout.astro";
                 Email
               </h3>
               <a
-                class="text-medium text-coolGray-500 hover:text-coolGray-600 font-medium"
+                class="text-sm text-coolGray-500 hover:text-coolGray-600 font-medium"
                 href="mailto:#">enrappresentanzasardegna@gmail.com</a
               >
             </div>
           </div>
           <div class="flex mb-18">
             <div
-              class="inline-flex mr-6 items-center justify-center w-12 h-12 bg-green-500 rounded-full"
+              class="inline-flex mr-6 items-center justify-center w-12 h-12 bg-[#16A349] rounded-full"
             >
               <svg
                 class="h-6 text-white"
@@ -84,7 +96,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
           <div class="flex">
             <div
-              class="inline-flex mr-6 items-center justify-center w-12 h-12 bg-green-500 rounded-full"
+              class="inline-flex mr-6 items-center justify-center w-12 h-12 bg-[#16A349] rounded-full"
             >
               <svg
                 class="h-6 text-white"
@@ -113,12 +125,37 @@ import Layout from "../layouts/Layout.astro";
               </a>
             </div>
           </div>
-        </div>
-        <div class="w-full lg:w-1/2 px-4">
-          <img
-            src="https://shuffle.dev/flex-ui-assets/images/contact/contact-map-right.png"
-            alt=""
-          />
+          <div class="flex">
+            <div
+              class="inline-flex mr-6 items-center justify-center w-12 h-12 bg-[#16A349] rounded-full"
+            >
+              <svg
+                class="h-6 text-white"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21V3C22 2.73478 21.8946 2.48043 21.7071 2.29289C21.5196 2.10536 21.2652 2 21 2V2ZM8 20H4V16H8V20ZM8 14H4V10H8V14ZM8 8H4V4H8V8ZM14 20H10V16H14V20ZM14 14H10V10H14V14ZM14 8H10V4H14V8ZM20 20H16V16H20V20ZM20 14H16V10H20V14ZM20 8H16V4H20V8Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <div class="mt-2">
+              <h3
+                class="mb-3 text-2xl md:text-3xl leading-9 text-coolGray-900 font-bold"
+              >
+                Pagina Instagram
+              </h3>
+              <a
+                class="text-sm inline-block mr-8 text-green-500 hover:text-green-600"
+                href="https://www.instagram.com/energierappresentanza_sardegna/"
+              >
+                @energierappresentanza_sardegna
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

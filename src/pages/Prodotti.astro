@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/card.astro";
+import climatizzatore from "../../public/Climatizzatore.jpeg";
+import fotovoltaico from "../../public/Fotovoltaico.jpeg";
+import chiller from "../../public/chiller.jpg";
+import scaldacqua from "../../public/ScaldaAcqua.webp";
 ---
 
 <Layout title="Prodotti">
@@ -10,22 +14,22 @@ import Card from "../components/card.astro";
     <Card
       title="Climatizzatori"
       description="I climatizzatori regolano la temperatura e l'umidità in ambienti chiusi, utilizzando un ciclo di refrigerazione. Alcuni modelli filtrano anche l'aria e offrono funzionalità avanzate come il controllo remoto."
-      photoUrl="https://scontent.fgoa5-2.fna.fbcdn.net/v/t39.30808-6/406494950_18005675111467253_1665671170293077602_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=xV57giYg7OsAX-F09Ou&_nc_ht=scontent.fgoa5-2.fna&oh=00_AfAQ2SxaxT59c7gwlz56OAf5brLWGkGO6SBXaT2iqw04SQ&oe=65A88B4D"
+      photoUrl={climatizzatore}
     />
     <Card
       title="Impianto Fotovoltaico"
       description="Gli impianti fotovoltaici generano elettricità convertendo l'energia solare in energia elettrica attraverso pannelli solari. Possono essere utilizzati per alimentare abitazioni o aziende, contribuendo a ridurre l'impatto ambientale e i costi energetici."
-      photoUrl="https://scontent.fgoa5-2.fna.fbcdn.net/v/t39.30808-6/244202110_382256876973557_1260386748688769199_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=npUfFSA8lOUAX9kuDVb&_nc_ht=scontent.fgoa5-2.fna&oh=00_AfAQ0Dz-1qCx3F0PH7p4W7xbdd-45Zu7v_PPGPc5pFJoxw&oe=65A8C22F"
+      photoUrl={fotovoltaico}
     />
     <Card
       title="Chiller"
       description="I chiller sono sistemi di refrigerazione utilizzati per raffreddare fluidi o ambienti. Attraverso un ciclo di compressione, rimuovono il calore e regolano la temperatura. I chiller sono impiegati in edifici, industrie e processi industriali per mantenere condizioni ottimali di temperatura."
-      photoUrl="https://flowbite.com/docs/images/blog/image-1.jpg"
+      photoUrl={chiller}
     />
     <Card
       title="ScaldaAcqua Pompa Di Calore"
       description="Le pompe di calore per riscaldamento dell'acqua sono dispositivi che sfruttano l'energia termica presente nell'ambiente circostante per riscaldare l'acqua. Utilizzano un ciclo termodinamico per trasferire il calore da una sorgente più fredda all'acqua da riscaldare. Questa tecnologia è efficiente ed ecologica, contribuendo a ridurre i consumi energetici e le emissioni di carbonio nell'ambito del riscaldamento dell'acqua."
-      photoUrl="https://scontent.fgoa5-2.fna.fbcdn.net/v/t39.30808-6/306165551_509089331216939_5865126806680128825_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=QYaWmn0IjXgAX8Kv8cX&_nc_oc=AQkTaQpyxJ2LXhFtZsRiN4vze6oUh2lTeEN9h-xwfo49CGDnmFjXAHcrYoStFaFSrmg&_nc_ht=scontent.fgoa5-2.fna&oh=00_AfA4iOqF95yQP9k6nyGwu3RCSsBNg2kYcXnz03Zf_ZafPA&oe=65A71A4E"
+      photoUrl={scaldacqua}
     />
     <Card
       title="Collonine di Ricarica"
