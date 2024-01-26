@@ -1,7 +1,7 @@
 <script>
   //import { e } from "../../dist/chunks/vendor.f7719c68";
 
-  const FORMSPARK_ACTION_URL = "https://submit-form.com/CZMLvCKn";
+  const FORMSPARK_ACTION_URL = "https://submit-form.com/72m6zZzii";
 
   let name = "";
   let number = "";
