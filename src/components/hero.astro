@@ -1,5 +1,5 @@
 ---
-import fotovoltaico from "../../public/Fotovoltaico.jpeg";
+import hero from "../../public/hero.mp4";
 import { Image } from "astro:assets";
 ---
 
@@ -8,7 +8,7 @@ import { Image } from "astro:assets";
     <div class="flex flex-wrap xl:items-center -mx-4">
       <div class="w-full md:w-1/2 px-2 mb-16 md:mb-0">
         <h1
-          class="text-[#16A349] mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight animate-pulse text-center"
+          class="text-[#16A349] mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight animate-pulse text-center lg:text-left"
         >
           ERS SRL <br /> RISPARMIO ENERGETICO
         </h1>
@@ -44,13 +44,13 @@ import { Image } from "astro:assets";
             alt=""
           />
 
-          <Image
-            class="relative rounded-7xl"
-            src={"https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-            alt=""
-            width="400"
-            height="100"
-          />
+          <div class="">
+            <video width="400" height="100" autoplay loop muted>
+              <source src={hero} type="video/mp4" />
+
+              Your browser does not support HTML video.
+            </video>
+          </div>
         </div>
       </div>
     </div>
